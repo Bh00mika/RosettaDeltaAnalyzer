@@ -68,13 +68,13 @@ dependencies:
 Run the script using the following command:
 
 ```sh
-python script.py <directory_path> <reference_file> --metrics <metric1> <metric2> --output_plot <output_file> --output_csv <output_file>
+python analyse_delta_run.py <directory_path> <reference_file> --metrics <metric1> <metric2> --output_plot <output_file> --output_csv <output_file>
 ```
 
 ### 💡 Example:
 
 ```sh
-python script.py ./scores/ reference_score.sc --metrics total_score ddG --output_plot comparison.png --output_csv results.csv
+python  analyse_delta_run.py ./scores/ reference_score.sc --metrics total_score ddG --output_plot comparison.png --output_csv results.csv
 ```
 
 ---
