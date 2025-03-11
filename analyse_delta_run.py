@@ -107,7 +107,7 @@ def main():
     parser.add_argument('directory_path', type=str, help="Path to the directory containing .sc files.")
     parser.add_argument('reference_file', type=str, help="Full path to the reference file (e.g., /path/to/I3_k18_score.sc).")
     parser.add_argument('--metrics', type=str, nargs='+', default=['total_score', 'ddG', 'sasa_1comp', 'sc1_1comp'], help="List of metrics to analyze.")
-    parser.add_argument('--output_plot', type=str, default='rosetta_k18c2_scores.png', help="Output file name for the plot.")
+    parser.add_argument('--output_plot', type=str, default='rosetta_scores.png', help="Output file name for the plot.")
     parser.add_argument('--output_csv', type=str, help="Output file name for the CSV of the data.")
     
     args = parser.parse_args()
