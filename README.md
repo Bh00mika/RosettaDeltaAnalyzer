@@ -1,6 +1,41 @@
-# RosettaDeltaAnalyzer
-This repository contains a Python script for analyzing and comparing Rosetta score files (.sc). The script loads, processes, and visualizes score data, allowing users to compare multiple designs against a reference structure.
-## Requirements File (`requirements.txt`)
+# 🎯 RosettaDeltaAnalyzer
+
+This repository contains a Python script for analyzing and comparing Rosetta score files (`.sc`). The script loads, processes, and visualizes score data, allowing users to compare multiple designs against a reference structure.
+
+---
+
+## 📌 Overview
+
+This is a Python-based tool that processes `.sc` files from Rosetta, computes score differences between various designs and a reference structure, and visualizes the results.
+
+### 🚀 Features
+
+✅ Parses and compiles scores from `.sc` files automatically.  
+✅ Computes deltas for specified metrics.  
+✅ Generates comparative bar plots for visualization.  
+✅ Supports CSV export of processed data.  
+✅ User-friendly CLI with customizable parameters.  
+
+---
+
+## 🔧 Installation
+
+### 📌 Using `pip`
+
+```sh
+pip install -r requirements.txt
+```
+
+### 🏗️ Using Conda
+
+```sh
+conda env create -f environment.yml
+conda activate rosetta_delta_analysis
+```
+
+---
+
+## 📁 Requirements File (`requirements.txt`)
 
 ```
 pandas
@@ -9,7 +44,9 @@ seaborn
 numpy
 ```
 
-## Environment File (`environment.yml`)
+---
+
+## ⚙️ Environment File (`environment.yml`)
 
 ```yaml
 name: rosetta_delta_analysis
@@ -22,35 +59,6 @@ dependencies:
   - matplotlib
   - seaborn
   - numpy
-
-```
-
-````markdown
-
-## 📌 Overview
-This is a Python-based tool that processes `.sc` files from Rosetta, computes score differences between various designs and a reference structure, and visualizes the results. 
-
-## 🚀 Features
-✅ Parses and compiles scores from `.sc` files automatically.
-✅ Computes deltas for specified metrics.
-✅ Generates comparative bar plots for visualization.
-✅ Supports CSV export of processed data.
-✅ User-friendly CLI with customizable parameters.
-
----
-
-## 🔧 Installation
-
-### 📌 Using `pip`
-```sh
-pip install -r requirements.txt
-````
-
-### 🏗️ Using Conda
-
-```sh
-conda env create -f environment.yml
-conda activate rosetta_delta_analysis
 ```
 
 ---
@@ -71,13 +79,13 @@ python script.py ./scores/ reference_score.sc --metrics total_score ddG --output
 
 ---
 
-## ⚙️ Arguments
+## 📊 Arguments
 
 | Argument         | Description                                                                                |
-| ---------------- | --------------------------------------------------------------------------------------     |
+|-----------------|--------------------------------------------------------------------------------------------|
 | `directory_path` | Path to the directory containing `.sc` files.                                              |
 | `reference_file` | Full path to the reference `.sc` file.                                                     |
-| `--metrics`      | List of metrics to analyze (default: `total_score`, `ddG`, `sasa_1comp`, `sc1_1comp` etc). |
+| `--metrics`      | List of metrics to analyze (default: `total_score`, `ddG`, `sasa_1comp`, `sc1_1comp`, etc). |
 | `--output_plot`  | Output file name for the plot (default: `rosetta_k18c2_scores.png`).                       | 
 | `--output_csv`   | Output file name for the CSV of computed deltas.                                           |
 | `--help`         | Display usage information.                                                                 |
@@ -88,3 +96,14 @@ python script.py ./scores/ reference_score.sc --metrics total_score ddG --output
 
 📖 This project is licensed under the **MIT License**.
 
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please fork the repository and submit a pull request for any improvements.
+
+---
+
+## 📧 Contact
+
+For questions or suggestions, feel free to reach out! 😊
