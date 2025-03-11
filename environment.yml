@@ -1,0 +1,10 @@
+name: rosetta_delta_analysis
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pandas
+  - matplotlib
+  - seaborn
+  - numpy
