@@ -86,7 +86,7 @@ python  analyse_delta_run.py ./scores/ reference_score.sc --metrics total_score 
 | `directory_path` | Path to the directory containing `.sc` files.                                              |
 | `reference_file` | Full path to the reference `.sc` file.                                                     |
 | `--metrics`      | List of metrics to analyze (default: `total_score`, `ddG`, `sasa_1comp`, `sc1_1comp`, etc). |
-| `--output_plot`  | Output file name for the plot (default: `rosetta_k18c2_scores.png`).                       | 
+| `--output_plot`  | Output file name for the plot (default: `rosetta_scores.png`).                       | 
 | `--output_csv`   | Output file name for the CSV of computed deltas.                                           |
 | `--help`         | Display usage information.                                                                 |
 
